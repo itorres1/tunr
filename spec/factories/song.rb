@@ -1,7 +1,7 @@
-
 FactoryGirl.define do
-  factory :playlist do
+  factory :song do
     title { Faker::Lorem.words(3).join(" ") }
-    association :user
+    price 1.99
+    association :artist
   end
 end

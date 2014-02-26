@@ -2,8 +2,8 @@ require 'spec_helper'
 
 describe "a user can create a playlist" do
   let(:user) { FactoryGirl.create(:user) }
-  let(:tick_tock) { FactoryGirl.create(:song, title: "Tick Tock") }
-  let(:love_is_my_drug) { FactoryGirl.create(:song, title: "Love is my Drug") }
+  let(:tick_tock) { FactoryGirl.create(:song) }
+  let(:love_is_my_drug) { FactoryGirl.create(:song) }
 
   before do
     user.purchase(tick_tock)
