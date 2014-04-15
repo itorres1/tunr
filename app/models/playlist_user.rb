@@ -1,5 +1,5 @@
 class PlaylistUser < ActiveRecord::Base
-  validates :playlist, presence: true
+  validates :playlist, :user, presence: true
   belongs_to :playlist
-  belongs_to :user 
+  belongs_to :user
 end
